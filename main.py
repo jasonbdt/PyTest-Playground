@@ -4,6 +4,19 @@ def round6(num):
     return int(num + .6)
 
 
+def upper_lower(text):
+    """
+    Checks if a given string contains an occurrence
+    of upper case letter followed by lower case letter.
+    Returns True if such thing exists, False otherwise.
+    """
+    for i in range(1, len(text)):
+        if text[i].isupper():
+            if text[i+1].islower():
+                return True
+    return False
+
+
 def main() -> None:
     print(round6(3.5)) # 3
     print(round6(3.6)) # 4
