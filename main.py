@@ -20,6 +20,13 @@ def upper_lower(text):
     return False
 
 
+def sumnums(lo, hi):
+    """Returns the sum of the numbers in the range [lo..hi]
+    Precondition: lo <= hi
+    """
+    pass
+
+
 def main() -> None:
     print(round6(3.5)) # 3
     print(round6(3.6)) # 4
