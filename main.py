@@ -12,8 +12,11 @@ def upper_lower(text):
     """
     for i in range(1, len(text)):
         if text[i].isupper():
-            if text[i+1].islower():
-                return True
+            try:
+                if text[i+1].islower():
+                    return True
+            except IndexError:
+                return False
     return False
 
 
