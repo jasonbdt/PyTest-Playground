@@ -24,16 +24,18 @@ def sumnums(lo, hi):
     """Returns the sum of the numbers in the range [lo..hi]
     Precondition: lo <= hi
     """
-    sum = 0
-    for i in range(lo, hi):
-        sum += i
+    result = lo
+    for i in range(lo, hi+1):
+        result *= i
 
-    return sum
+    return result
 
 
 def main() -> None:
     print(round6(3.5)) # 3
     print(round6(3.6)) # 4
+
+    print(sumnums(1, 3))
 
 
 if __name__ == '__main__':
