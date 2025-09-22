@@ -10,7 +10,7 @@ def upper_lower(text):
     of upper case letter followed by lower case letter.
     Returns True if such thing exists, False otherwise.
     """
-    for i in range(1, len(text)):
+    for i in range(0, len(text)):
         if text[i].isupper():
             try:
                 if text[i+1].islower():
