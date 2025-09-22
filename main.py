@@ -24,7 +24,11 @@ def sumnums(lo, hi):
     """Returns the sum of the numbers in the range [lo..hi]
     Precondition: lo <= hi
     """
-    pass
+    sum = 0
+    for i in range(lo, hi):
+        sum += i
+
+    return sum
 
 
 def main() -> None:
