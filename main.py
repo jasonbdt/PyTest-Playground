@@ -1,7 +1,7 @@
 
 def round6(num):
     """This function has a bug in it"""
-    return int(num + .6)
+    return int(num + .4)
 
 
 def upper_lower(text):
